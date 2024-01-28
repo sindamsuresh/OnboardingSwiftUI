@@ -16,8 +16,7 @@ struct OnboardingView: View {
     
     
     var body: some View {
-        
-        VStack{
+        VStack {
             TabView(selection: $currentPage) {
                 ForEach(onBoardingData.indices, id: \.self) { index in
                     OnboardingContentView(onboardingData: onBoardingData[index])
@@ -26,8 +25,8 @@ struct OnboardingView: View {
             }
             .tabViewStyle(.page(indexDisplayMode: .always))
             .indexViewStyle(.page(backgroundDisplayMode: .always))
-
-            if (currentPage == 3) {
+            
+            if (currentPage == onBoardingData.count - 1) {
                 Button(action: {
                     isOnboardingCompleted.toggle()
                 }, label: {
@@ -37,8 +36,6 @@ struct OnboardingView: View {
                         .background(.blue)
                         .clipShape(RoundedRectangle(cornerRadius: 4))
                         .padding(.horizontal, 20)
-                    
-                    
                 })
             }
         }

@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct AppView: View {
+    
+    @AppStorage("isOnboardingCompleted") var isOnboardingCompleted: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+//        Group {
+//
+//        }
+        if isOnboardingCompleted {
+            HomeView()
+        } else {
+            OnboardingView(isOnboardingCompleted: $isOnboardingCompleted, onBoardingData: OnBoardingData.onBoradingArr)
         }
-        .padding()
     }
 }
+
+
+
+
+
 
 #Preview {
     AppView()

@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		BEC9335D2B65B21800A7D987 /* Onboarding_In_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9335C2B65B21800A7D987 /* Onboarding_In_SwiftUIApp.swift */; };
-		BEC9335F2B65B21800A7D987 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9335E2B65B21800A7D987 /* ContentView.swift */; };
+		BEC9335F2B65B21800A7D987 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9335E2B65B21800A7D987 /* AppView.swift */; };
 		BEC933612B65B21900A7D987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC933602B65B21900A7D987 /* Assets.xcassets */; };
 		BEC933642B65B21900A7D987 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC933632B65B21900A7D987 /* Preview Assets.xcassets */; };
+		BEC9336B2B65D78200A7D987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9336A2B65D78200A7D987 /* HomeView.swift */; };
+		BEC9336D2B65D7A700A7D987 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9336C2B65D7A700A7D987 /* OnboardingView.swift */; };
+		BEC933712B65DA3700A7D987 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC933702B65DA3700A7D987 /* OnboardingModel.swift */; };
+		BEC933732B65DFC600A7D987 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC933722B65DFC600A7D987 /* OnboardingContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEC933592B65B21800A7D987 /* Onboarding In SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Onboarding In SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC9335C2B65B21800A7D987 /* Onboarding_In_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding_In_SwiftUIApp.swift; sourceTree = "<group>"; };
-		BEC9335E2B65B21800A7D987 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BEC9335E2B65B21800A7D987 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		BEC933602B65B21900A7D987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEC933632B65B21900A7D987 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEC9336A2B65D78200A7D987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BEC9336C2B65D7A700A7D987 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		BEC933702B65DA3700A7D987 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		BEC933722B65DFC600A7D987 /* OnboardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				BEC9335C2B65B21800A7D987 /* Onboarding_In_SwiftUIApp.swift */,
-				BEC9335E2B65B21800A7D987 /* ContentView.swift */,
+				BEC9335E2B65B21800A7D987 /* AppView.swift */,
+				BEC9336E2B65DA0100A7D987 /* Onboarding */,
+				BEC933752B65F4F900A7D987 /* Home */,
 				BEC933602B65B21900A7D987 /* Assets.xcassets */,
 				BEC933622B65B21900A7D987 /* Preview Content */,
 			);
@@ -65,6 +75,48 @@
 				BEC933632B65B21900A7D987 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEC9336E2B65DA0100A7D987 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BEC933742B65F4DF00A7D987 /* View */,
+				BEC9336F2B65DA2100A7D987 /* Model */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		BEC9336F2B65DA2100A7D987 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEC933702B65DA3700A7D987 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEC933742B65F4DF00A7D987 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEC9336C2B65D7A700A7D987 /* OnboardingView.swift */,
+				BEC933722B65DFC600A7D987 /* OnboardingContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEC933752B65F4F900A7D987 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BEC933762B65F50900A7D987 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BEC933762B65F50900A7D987 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEC9336A2B65D78200A7D987 /* HomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEC9335F2B65B21800A7D987 /* ContentView.swift in Sources */,
+				BEC9336B2B65D78200A7D987 /* HomeView.swift in Sources */,
+				BEC933712B65DA3700A7D987 /* OnboardingModel.swift in Sources */,
+				BEC9336D2B65D7A700A7D987 /* OnboardingView.swift in Sources */,
+				BEC9335F2B65B21800A7D987 /* AppView.swift in Sources */,
 				BEC9335D2B65B21800A7D987 /* Onboarding_In_SwiftUIApp.swift in Sources */,
+				BEC933732B65DFC600A7D987 /* OnboardingContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
