@@ -26,10 +26,6 @@ struct OnboardingContentView: View {
                 .fontWeight(.regular)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
-            
-            
-            
-           
         }.padding(.horizontal, 20)
     }
 }

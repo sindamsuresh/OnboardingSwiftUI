@@ -12,9 +12,6 @@ struct AppView: View {
     @AppStorage("isOnboardingCompleted") var isOnboardingCompleted: Bool = false
     
     var body: some View {
-//        Group {
-//
-//        }
         if isOnboardingCompleted {
             HomeView()
         } else {
@@ -22,9 +19,6 @@ struct AppView: View {
         }
     }
 }
-
-
-
 
 
 
